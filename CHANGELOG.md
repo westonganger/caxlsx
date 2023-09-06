@@ -1,6 +1,7 @@
 CHANGELOG
 ---------
 - **Unreleased**: 4.0.0
+  - Change `col_style` to apply styles on the columns themselves, not on the existing cells only
   - Drop support for Ruby versions < 2.6
   - Added frozen string literals
   - Fix `SimpleTypedList#to_a` and `SimpleTypedList#to_ary` returning the internal list instance

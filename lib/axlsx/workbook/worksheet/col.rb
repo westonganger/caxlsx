@@ -69,6 +69,10 @@ module Axlsx
     # @return [Numeric]
     attr_reader :width
 
+    # The list of columns within the column
+    # @return [Col]
+    attr_reader :list
+
     # @return [Boolean]
     attr_reader :custom_width
     alias :customWidth :custom_width

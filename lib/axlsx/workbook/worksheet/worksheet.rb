@@ -561,9 +561,12 @@ module Axlsx
     # @see Worksheet#add_row
     # @see README.md for an example
     def col_style(index, style, options = {})
-      offset = options.delete(:row_offset) || 0
-      cells = @rows[(offset..-1)].map { |row| row[index] }.flatten.compact
-      cells.each { |cell| cell.style = style }
+      # offset = options.delete(:row_offset) || 0
+      # cells = @rows[(offset..-1)].map { |row| row[index] }.flatten.compact
+      # cells.each { |cell| cell.style = style }
+
+      col = column_info.list[index]
+      col.style = style
     end
 
     # Set the style for cells in a specific row
